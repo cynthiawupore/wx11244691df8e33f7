@@ -1,0 +1,13 @@
+<view class="index">
+  <view class="txt" wx:if="{{!isNeedName}}">倒计时<span class="text-b">{{countDownNum}}</span>秒,你总共给<span class="text-b">{{name}}</span>磕了<span class="text-b">{{counts}}</span>个头</view>
+  <view class="ketou-view ketou-animation"></view>
+  <button
+      class="counter-btn"
+      type="default"
+      bindtap="counter"
+      hover-class="counter-btn-active"
+      disabled="{{btnDisabled}}"
+  >磕头</button>
+</view>
+
+<input-name wx:if="{{isNeedName}}" bind:toKeTouChild="toKeTou"></input-name>

@@ -1,0 +1,9 @@
+<view class="save-success-poster">
+    <view class="box" style="width:{{scaleW}}px;height:{{scaleH}}px;margin: 0 auto">
+        <canvas canvas-id="poster-display" class="poster-display" style="width:{{scaleW}}px;height:{{scaleH}}px;margin: 0 auto"/>
+        <canvas canvas-id="poster" class="poster"/>
+    </view>
+    <div class="button-box">
+        <button bindtap="save">保存图片到本地</button>
+    </div>
+</view>

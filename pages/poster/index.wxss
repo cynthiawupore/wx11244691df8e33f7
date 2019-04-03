@@ -1,0 +1,36 @@
+page{
+    background: #F5F5F5;
+}
+.save-success-poster{
+    position: relative;
+}
+.save-success-poster .box{}
+.save-success-poster .box .poster-display{}
+.save-success-poster .box .poster{
+    width: 375px;
+    height: 680px;
+    position: fixed;
+    left: -1000px;
+    top: -1000px;
+}
+.save-success-poster .button-box{
+    width: 100%;
+    height: 80px;
+    background: #fff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 20px;
+    padding-top: 18px;
+}
+.save-success-poster .button-box button{
+    width: 100%;
+    background: #62626B;
+    border-radius: 6;
+    color: #fff;
+}
+.save-success-poster .button-box button:after{
+    border: none;
+}

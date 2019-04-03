@@ -1,0 +1,8 @@
+<view class="input-name">
+    <view class="pop-view">
+        <input placeholder="请输入磕头对象，字限10" auto-focus maxlength="10" bindinput="bindKeyInput" />
+        <button type="default" style="font-size: 16px;margin-top: 20rpx" bindtap="toKeTou">
+            去磕头
+        </button>
+    </view>
+</view>
