@@ -7,7 +7,7 @@ Page({
         scaleW: Math.ceil(((wx.getSystemInfoSync().screenHeight - 160)/700) * 375),
         scaleH: Math.ceil(((wx.getSystemInfoSync().screenHeight - 160)/700) * 700),
         canvasBG:'../../assets/bg-poster.png',
-        QR:''
+        QR:'../../assets/gh_2e3481260e82_430.jpg'
     },
     onLoad: function(options) {
         this.setData({
@@ -33,6 +33,7 @@ Page({
     drawCanvas: function(ctx) {
         // 背景图片
         ctx.drawImage(this.data.canvasBG, 0, 0, 375, 700)
+        ctx.drawImage(this.data.QR, 0, 60, 170, 170)
         ctx.setFontSize(15)
         ctx.setFillStyle('#333')
         ctx.fillText('我15秒给' + this.data.name + '磕了' + this.data.counts + '个头', 30, 453)
